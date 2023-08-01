@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linea de TiempoDC</title>
+</head>
+<Style>
+	.linea-tiempo {
+  position: relative;
+  width: 500px;
+  max-width: 95vw;
+  height: 100%;
+  font-family: Arial;
+}
+
+.linea-tiempo::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.momento {
+  position: relative;
+  width: 45%;
+  left: -30%;
+  box-sizing: border-box;
+}
+
+.momento:nth-child(even) {
+  left: 30%;
+}
+
+.momento::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #999;
+  border-radius: 50%;
+}
+
+.momento:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
+.momento h3 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.momento .descripcion {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.momento .descripcion::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 10px);
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #eee;
+}
+.momento:nth-child(even) .descripcion {
+  background-color: #006;
+  color: white;
+}
+
+.momento:nth-child(even) .descripcion::after{
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #006;
+  border-left: none;
+}
+</style>
+<body>
+<center>
+<div class="linea-tiempo">
+  <div class="momento">
+    <h3>Wonder Woman (2017)</h3>
+    <div class="descripcion"><img src="imgns/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" width="200" height="300" />
+    </div>
+  </div>
+  <div class="momento">
+    <h3>Wonder Woman 1984</h3>
+    <div class="descripcion"><img src="imgns/Wonder_Woman_1984-686758013-mmed.jpg" width="200" height="300" />
+    </div>
+  </div>
+  <div class="momento">
+    <h3>El Hombre De Acero</h3>
+    <div class="descripcion"><img src="imgns/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_.jpg" width="200" height="300" />
+    </div>
+  </div>
+  <div class="momento">
+    <h3>Batman v Superman: EL Amanecer De La Justicia</h3>
+    <div class="descripcion"><img src="imgns/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" width="200" height="300" />
+    </div>
+  </div>
+</div>
+<div class="linea-tiempo">
+  <div class="momento">
+    <h3>Escuadron Suicida (2016)</h3>
+    <div class="descripcion"><img src="imgns/81NyY90J0fL._AC_UF894,1000_QL80_.jpg" width="200" height="300" />
+    </div>
+  </div>
+   <div class="momento">
+    <h3>Liga De La Justicia</h3>
+    <div class="descripcion"><img src="imgns/rkuvJnamPl3xW9wKJsIS6qkmOCW.jpg" width="200" height="300" />
+    </div>
+  </div>
+   <div class="momento">
+    <h3>Aquaman</h3>
+    <div class="descripcion"><img src="imgns/Aquaman-355320736-large.jpg" width="200" height="300" />
+    </div>
+  </div>
+  <div class="momento">
+    <h3>Shazam</h3>
+    <div class="descripcion"><img src="imgns/descargar.jpg" width="200" height="300" />
+    </div>
+  </div>
+   <div class="momento">
+    <h3>Escuadron Suicida 2</h3>
+    <div class="descripcion"><img src="imgns/MV5BMWU4NDQ2NjEtNjhkOS00Y2MwLWJkODItZmJhZGE0MDU1OWM4XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" width="200" height="300" />
+    </div>
+  </div>
+</div>
+</center>
+</body>
+</html>
